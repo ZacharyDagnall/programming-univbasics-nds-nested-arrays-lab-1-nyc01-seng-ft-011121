@@ -25,15 +25,16 @@ def sort(arr)
   
   for i in 0...(arr.length-1) do
     arr2[i] = arr[i]
+    
     for j in 1...arr.length do
-      if(arr[i] > arr[j]) then
-        dummy = arr[i]
-        arr[i] = arr[j]
-        arr[j] = dummy
+      if(arr[j] < arr2[i]) then
+        arr2[i] = arr[j]
       end
     end 
   end
+  
   arr=arr2
+  
 end 
 
 def sorted_matrix
