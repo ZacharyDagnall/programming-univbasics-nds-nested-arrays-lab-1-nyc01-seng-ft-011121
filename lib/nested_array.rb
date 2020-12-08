@@ -21,8 +21,10 @@ def assembled_matrix
 end
 
 def sort(arr)
+  arr2 = []
   
   for i in 0...(arr.length-1) do
+    arr2[i] = arr[i]
     for j in 1...arr.length do
       if(arr[i] > arr[j]) then
         dummy = arr[i]
@@ -31,7 +33,7 @@ def sort(arr)
       end
     end 
   end
-  
+  arr=arr2
 end 
 
 def sorted_matrix
