@@ -39,8 +39,8 @@ end
 
 def sorted_matrix
   
-  sort(ORGANIC_PRODUCE)
-  sort(CONVENTIONAL_PRODUCE)
+  ORGANIC_PRODUCE.sort!
+  CONVENTIONAL_PRODUCE.sort!
   
   storage_room = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
   puts storage_room
