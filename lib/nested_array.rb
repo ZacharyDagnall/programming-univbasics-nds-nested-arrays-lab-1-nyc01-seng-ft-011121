@@ -20,16 +20,18 @@ def assembled_matrix
   storage_room = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
 end
 
-def sort(array)
-  for i in 0...ORGANIC_PRODUCE.length-1 do
-    for j in 1...ORGANIC_PRODUCE.length do
-      if(ORGANIC_PRODUCE[i] > ORGANIC_PRODUCE[j]) then
-        dummy = ORGANIC_PRODUCE[i]
-        ORGANIC_PRODUCE[i] = ORGANIC_PRODUCE[j]
-        ORGANIC_PRODUCE[j] = dummy
+def sort(arr)
+  
+  for i in 0...(arr.length-1) do
+    for j in 1...arr.length do
+      if(arr[i] > arr[j]) then
+        dummy = arr[i]
+        arr[i] = arr[j]
+        arr[j] = dummy
       end
     end 
   end
+  
 end 
 
 def sorted_matrix
